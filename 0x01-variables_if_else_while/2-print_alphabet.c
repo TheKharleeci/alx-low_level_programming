@@ -10,9 +10,12 @@
 
 int main(void)
 {
-	for (int x = 'a'; x <= 'z'; x++)
+	int i = 97;
+
+	while (i < 123)
 	{
-		putchar(x);
+		putchar(i);
+		i++;
 	}
 
 	putchar(10);
