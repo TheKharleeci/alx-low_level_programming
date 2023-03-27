@@ -22,8 +22,10 @@ void print_array(int *a, int n)
 	while (i < n && i < arr_length)
 	{
 		if (i == (n - 1) || i == (arr_length - 1))
+		{
 			printf("%d", a[i]);
 			break;
+		}
 		printf("%d, ", a[i]);
 		i++;
 	}
