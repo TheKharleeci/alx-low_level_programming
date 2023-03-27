@@ -12,12 +12,18 @@
 void print_array(int *a, int n)
 {
 	int i = 0;
+	int arr_length = 0;
 
-	while (i < (n - 1) && a[i])
+	while (a[arr_length])
 	{
-		printf("%d, ", a[i]);
+		arr_length++;
+	}
+
+	while (i < n && i < arr_length)
+	{
+		if (i == (n - 1) || i == (arr_length - 1))
+			printf("%d", s[i]);
+		printf("%d, ", s[i]);
 		i++;
 	}
-	if (i == (n - 1) && a[i])
-		printf("%d\n", a[i]);
 }
