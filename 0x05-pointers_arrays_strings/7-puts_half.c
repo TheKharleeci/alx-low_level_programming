@@ -16,14 +16,12 @@ void puts_half(char *str)
 		strlen++;
 	}
 
-	int start_point;
+	int start_point, i;
 
 	if (strlen % 2 != 0)
 		start_point = (strlen - 1) / 2;
 	else
 		start_point = strlen / 2;
-
-	int i;
 
 	for (i = start_point; i < strlen; i++)
 	{
