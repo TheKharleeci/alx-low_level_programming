@@ -19,9 +19,9 @@ void reverse_array(int *a, int n)
 
 	while (i < mid_point)
 	{
-		temp = s[i];
-		s[i] = s[j];
-		s[j] = temp;
+		temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
 		i++;
 		j--;
 	}
