@@ -12,7 +12,7 @@ int _strcmp(char *s1, char *s2)
 	int i;
 	int first_str_len = 0;
 	int second_str_len = 0;
-	int max_len = first_str_len;
+	int min_len;
 
 	while (s1[first_str_len])
 	{
@@ -23,9 +23,11 @@ int _strcmp(char *s1, char *s2)
 	{
 		second_str_len++;
 	}
-	if (second_str_len - first_str_len > 0)
-		max_len = second_str_len;
-	for (i = 0; i < max_len; i++)
+	if (second_str_len <= first_str_len)
+		min_len = second_str_len;
+	else
+		min_len = first_str_len;
+	for (i = 0; i < min_len; i++)
 	{
 		if (s1[i] != s2[i])
 		{
