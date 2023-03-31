@@ -13,7 +13,6 @@ int *_strcmp(char *s1, char *s2)
 	int first_str_len = 0;
 	int second_str_len = 0;
 	int max_len = first_str_len;
-	int result;
 
 	while (s1[first_str_len])
 	{
@@ -30,10 +29,9 @@ int *_strcmp(char *s1, char *s2)
 	{
 		if (s1[i] != s2[i])
 		{
-			result = s1[i] - s2[i];
-			break;
+			return (s1[i] - s2[i]);
 		}
 	}
 
-	return (result);
+	return (0);
 }
