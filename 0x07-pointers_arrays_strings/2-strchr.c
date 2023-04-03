@@ -9,7 +9,7 @@
  * Return: char (a pointer to the first occurence of the string)
  */
 
-char *_strchr(char *s, char *c)
+char *_strchr(char *s, char c)
 {
 	int i = 0;
 
