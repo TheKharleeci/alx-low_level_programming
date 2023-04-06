@@ -27,6 +27,7 @@ int find_sqrt(int n, int start, int end)
 			return (find_sqrt(n, start, mid - 1));
 		}
 	}
+	return (-1);
 }
 
 /**
