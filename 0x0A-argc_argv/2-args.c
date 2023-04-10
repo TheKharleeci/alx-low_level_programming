@@ -6,7 +6,7 @@
  * @argv: the array of the arguments
  * Return: 0
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
