@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char **result;
+	char *result;
 	int i;
 
 	result = malloc(ac * sizeof(char));
