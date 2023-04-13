@@ -13,7 +13,8 @@ void *malloc_checked(unsigned int b)
 	mem = malloc(b * sizeof(int));
 	if (mem == NULL)
 	{
-		return (exit(98));
+		exit(98);
+		return (0);
 	}
 
 	return (mem);
